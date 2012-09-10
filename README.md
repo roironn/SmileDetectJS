@@ -9,34 +9,29 @@ Haar-detector by Nikos M is required and included in this repo.
 
 Usage
 =====
-1)Add both scripts to the top of the body tag:
-'''javascript
-<script type="text/javascript" src="js/haar-detector.js"></script>
-<script type="text/javascript" src="js/smile-detector.js"></script>
-''' 
-2)Add a video tag to the document. If you do not want it to be seen by the user simply change the visibility.
-'''html
-<video id="vid" height="426" width="640" style="visibility:hidden;" autoplay></video>
-'''
-3)Create a smile detection callback function
-'''javascript
-var cb = function(isSmile){
-	if (isSmile){
-		document.getElementById("smile").setAttribute("class", "happy");
-	}
-	else{
-		document.getElementById("smile").setAttribute("class", "sad");
-	}
-}
-'''
+1.Add both scripts to the top of the body tag:
 
-4)Set up the smile detector:
-'''javascript
-var sd = new SmileDetector("vid");
-sd.onSmile(cb);
-'''
+    <script type="text/javascript" src="js/haar-detector.js"></script>
+    <script type="text/javascript" src="js/smile-detector.js"></script>
 
-5)Start the smile detection loop on the video stream. The detector will do its best effort to check for a smile every "interval" seconds.
-'''javascript
-sd.start(300);
-'''
+2.Add a video tag to the document. If you do not want it to be seen by the user simply change the visibility.
+
+    <video id="vid" height="426" width="640" style="visibility:hidden;" autoplay></video>
+
+3.Create a smile detection callback function
+    var cb = function(isSmile){
+        if (isSmile){
+            document.getElementById("smile").setAttribute("class", "happy");
+        }
+        else{
+            document.getElementById("smile").setAttribute("class", "sad");
+        }
+    }
+
+
+4.Set up the smile detector:
+    var sd = new SmileDetector("vid");
+    sd.onSmile(cb);
+
+5.Start the smile detection loop on the video stream. The detector will do its best effort to check for a smile every "interval" seconds.
+    sd.start(300);
