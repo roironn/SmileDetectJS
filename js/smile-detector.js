@@ -1,6 +1,13 @@
-/*
-*
-*/
+/**************************************************************************************
+** A webcam smile detector based on HAAR feature detection.
+** Dependencies : haar-detector.js by Nikos M.(url:https://github.com/foo123/HAAR.js)
+** Version: 1
+** Note: Current version was tested on chrome only.
+**
+** Author Roi R.
+**
+** Usage : See README
+**************************************************************************************/
 var SmileDetector = function(videoElementID){
 
 	this.MIN_DELAY = 50;
