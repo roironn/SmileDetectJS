@@ -18,7 +18,8 @@ Usage
 
     <video id="vid" height="426" width="640" style="visibility:hidden;" autoplay></video>
 
-3.Create a smile detection callback function
+3.Create a smile detection callback function:
+
     var cb = function(isSmile){
         if (isSmile){
             document.getElementById("smile").setAttribute("class", "happy");
