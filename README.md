@@ -3,6 +3,7 @@ About
 Create a video stream from a user's webcam and attempts do detect smiles in the video.
 Based on HAAR detector by Nikos M which is in turn based on Viola-Jones Haar Detection algorithm.
 
+Check out a working demo: http://smiledemo.staticloud.com/
 Dependencies
 ============
 Haar-detector by Nikos M is required and included in this repo.
