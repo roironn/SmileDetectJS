@@ -31,8 +31,10 @@ Usage
 
 
 4.Set up the smile detector:
+
     var sd = new SmileDetector("vid");
     sd.onSmile(cb);
 
-5.Start the smile detection loop on the video stream. The detector will do its best effort to check for a smile every "interval" seconds.
+5.Start the smile detection loop on the video stream. The detector will do its best effort to check for a smile every "interval" seconds:
+
     sd.start(300);
